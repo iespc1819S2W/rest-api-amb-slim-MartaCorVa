@@ -1,9 +1,11 @@
 <?php
-$base = __DIR__ . '/..';
-require_once("$base/lib/resposta.class.php");
-require_once("$base/lib/database.class.php");
+namespace App\Model;
+use App\Lib\Database;
+use App\Lib\Resposta;
+use PDO;
+use Exception;
 
-class llibre
+class Llibre
 {
 
     private $conn;       //connexió a la base de dades (PDO)
